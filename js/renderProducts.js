@@ -3,17 +3,15 @@ const productsContainer = document.querySelector('#products-container');
 getProducts()
 
 async function getProducts() {
-  const productsArray = await fetch('https://63e08d9159bb472a742402db.mockapi.io/rolls-shop')
-    .then(response => response.json())
+	const productsArray = await fetch('https://63e08d9159bb472a742402db.mockapi.io/rolls-shop')
+		.then(response => response.json())
 
-  console.log(productsArray);
-
-  renderProducts(productsArray)
+	renderProducts(productsArray)
 }
 
 function renderProducts(productsArray) {
-  productsArray.forEach((item) => {
-    const productHTML = `
+	productsArray.forEach((item) => {
+		const productHTML = `
           <div class="col-md-6">
 						<div class="card mb-4" data-id="${item.id}">
 							<img class="product-img" src="${item.imgSrc}" alt="${item.title}">
@@ -43,7 +41,7 @@ function renderProducts(productsArray) {
 						</div>
 					</div>`
 
-    productsContainer.insertAdjacentHTML('beforeend', productHTML)
-  })
+		productsContainer.insertAdjacentHTML('beforeend', productHTML)
+	})
 
 }
