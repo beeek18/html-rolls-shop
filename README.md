@@ -1,4 +1,4 @@
-<h1> rolls-shop 🍣
+<h1>Online store for ordering rolls🍣
 
 <h4>
 <li>JS
