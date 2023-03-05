@@ -7,3 +7,4 @@
 <li>jQuery
 <li>Fetch
 <li>DOM
+<li>Mobile adaptation
